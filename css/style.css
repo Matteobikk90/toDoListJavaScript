@@ -1,0 +1,12 @@
+ul {
+	list-style: none;
+	padding: 0;
+	width: 20%;
+}
+
+li {
+	border: 1px solid #ccc;
+	background-color: #eee;
+	padding: 5px 10px;
+	color: #000;
+}
