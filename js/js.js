@@ -10,14 +10,46 @@ function addNewItem(list, itemText) {
 var newItem = document.getElementById('addBtn');
 
 newItem.onclick = function() {
+
 	// var itemText = prompt("What do you want to had to the list??");
-	var getValue = document.getElementById("getValue");
+	
+		var getValue = document.getElementById("getValue");
 
-	var itemText = getValue.value;
+		var itemText = getValue.value;
 
-	if(!itemText || itemText == "" || itemText == " ") {
+		if(!itemText || itemText == "" || itemText == " ") {
 		return false;
+		}
+
+		addNewItem(document.getElementById("todoList"), itemText);
+		getValue.select();
+};
+
+///////////////////////////////////////////////////////////////////////
+
+var newItem2 = document.getElementById('addBtn2');
+
+newItem2.onkeyup = function(event) {
+	
+	// var itemText = prompt("What do you want to had to the list??");
+	
+	if(event.which == 13) {
+
+		var itemText = getValue2.value;
+
+		if(!itemText || itemText == "" || itemText == " ") {
+		return false;
+		}
+
+		addNewItem(document.getElementById("todoList2"), itemText);
+
 	}
 
-	addNewItem(document.getElementById("todoList"), itemText);
 };
+
+
+
+
+
+
+
