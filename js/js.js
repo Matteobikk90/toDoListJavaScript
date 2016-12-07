@@ -27,25 +27,25 @@ newItem.onclick = function() {
 
 ///////////////////////////////////////////////////////////////////////
 
-var newItem2 = document.getElementById('addBtn2');
+// var newItem2 = document.getElementById('addBtn2');
 
-newItem2.onkeyup = function(event) {
+// newItem2.onkeyup = function(event) {
 	
-	// var itemText = prompt("What do you want to had to the list??");
+// 	// var itemText = prompt("What do you want to had to the list??");
 	
-	if(event.which == 13) {
+// 	if(event.which == 13) {
 
-		var itemText = getValue2.value;
+// 		var itemText = event.which;
 
-		if(!itemText || itemText == "" || itemText == " ") {
-		return false;
-		}
+// 		if(!itemText || itemText == "" || itemText == " ") {
+// 		return false;
+// 		}
 
-		addNewItem(document.getElementById("todoList2"), itemText);
+// 		addNewItem(document.getElementById("todoList2"), itemText);
 
-	}
+// 	}
 
-};
+// };
 
 
 
