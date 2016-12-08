@@ -2,11 +2,15 @@ function crossList() {
 
 	var me = this;	
 	console.log(me);
-
+	var checkId = "cb_" + totalItems;
+	console.log(checkId);
 
 };
 
 function addNewItem(list, itemText) {
+
+	totalItems++;
+
 	var listItem = document.createElement("li");
 	var checkBox = document.createElement("input");
 	checkBox.type = "checkbox";
@@ -21,6 +25,7 @@ function addNewItem(list, itemText) {
 
 }; 
 
+var totalItems = 0;
 var newItem = document.getElementById('addBtn');
 
 newItem.onclick = function() {
