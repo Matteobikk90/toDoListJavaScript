@@ -1,10 +1,24 @@
+function crossList() {
+
+	var me = this;	
+	console.log(me);
+
+
+};
+
 function addNewItem(list, itemText) {
 	var listItem = document.createElement("li");
+	var checkBox = document.createElement("input");
+	checkBox.type = "checkbox";
+	checkBox.onclick = crossList;
 
 	// listItem.innerText = "Hello";
 	listItem.innerText = itemText;
 
+	listItem.appendChild(checkBox);
+
 	list.appendChild(listItem);
+
 }; 
 
 var newItem = document.getElementById('addBtn');
